@@ -154,8 +154,8 @@ Multiplication-Exprs : Terms                                     {cout<<"Multipl
                      ;
 
 Terms      : Term                                                {cout<<"Terms->Term\n";}
-           | SUB Term                                          {cout<<"Terms->SUB->Term\n";}
-           | ID L_PAREN List R_PAREN                            {cout<<"Terms->Identifier->L_PAREN->Lists->R_PAREN\n";}
+           | SUB Term                                            {cout<<"Terms->SUB->Term\n";}
+           | ID L_PAREN List R_PAREN                             {cout<<"Terms->Identifier->L_PAREN->Lists->R_PAREN\n";}
            ;
 
 List       : Expressions                                         {cout<<"List->Expressions\n";}
